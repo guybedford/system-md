@@ -4,7 +4,7 @@ var converter = new showdown.converter();
 module.exports = function(name, address, fetch, callback, errback) {
   fetch(address, function(markdown) {
     callback('module.exports = "'
-    + converter.makeHtml()
+    + converter.makeHtml(markdown)
       .replace(/(["\\])/g, '\\$1')
       .replace(/[\f]/g, "\\f")
       .replace(/[\b]/g, "\\b")
