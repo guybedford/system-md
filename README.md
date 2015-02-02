@@ -1,4 +1,4 @@
-plugin-md
+system-md
 =========
 
-jspm Markdown plugin
+SystemJS Markdown plugin

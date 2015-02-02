@@ -1,4 +1,6 @@
 {
+  "name": "system-md",
+  "version": "0.1.0",
   "main": "md",
   "registry": "jspm",
   "dependencies": {
