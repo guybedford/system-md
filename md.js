@@ -1,5 +1,5 @@
-var showdown = require('showdown@0.3.1');
-var converter = new showdown.converter();
+var showdown = require('showdown');
+var converter = new showdown.Converter();
 
 exports.translate = function(load) {
   return converter.makeHtml(load.source);
