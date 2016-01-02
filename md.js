@@ -13,7 +13,3 @@ exports.translate = function(load) {
     .replace(/[\u2029]/g, "\\u2029")
   + '";';
 }
-
-exports.instantiate = function(load) {
-  return load.source;
-}
