@@ -10,6 +10,9 @@
       '*.md': {
         loader: './md.js'
       }
+    },
+    mdOptions: {
+      'tables': true
     }
   });
   System.import('./test.md').then(console.log.bind(console))
