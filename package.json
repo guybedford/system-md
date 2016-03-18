@@ -1,4 +1,5 @@
 {
+  "name": "systemjs-plugin-md",
   "version": "0.1.0",
   "main": "md",
   "registry": "jspm",
