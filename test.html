@@ -8,11 +8,11 @@
     },
     meta: {
       '*.md': {
-        loader: './md.js'
+        loader: './md.js',
+        mdOptions: {
+          'tables': true
+        }
       }
-    },
-    mdOptions: {
-      'tables': true
     }
   });
   System.import('./test.md').then(console.log.bind(console))

@@ -2,7 +2,7 @@ var showdown = require('showdown');
 var converter = new showdown.Converter();
 
 exports.translate = function(load) {
-  var converterOptions = this.mdOptions;
+  var converterOptions = load.metadata.mdOptions;
   if (converterOptions) {
     for (var opt in converterOptions) {
       if (converterOptions.hasOwnProperty(opt)) {
